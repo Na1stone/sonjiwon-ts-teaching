@@ -1,9 +1,12 @@
 import React from "react"
 import './App.css';
+import Woobin from './Woobin';
 
 function App() {
   return (
-    <div>1</div>
+    <div>
+      <Woobin/>
+    </div>
   );
 }
 
