@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import './Woobin.css';
 
 const Woobin = () => {
   const [nameList, setNameList] = useState(['손지원', '나원석', '다람쥐', '라면'])
@@ -13,22 +14,24 @@ const Woobin = () => {
         {nameList}
       </div>
       <div>
-        <button onClick={() => setNameList(nameList.concat('김우빈'))}>
+        <div className='buttons'>
+
+        <div style={{backgroundColor:"black", color:"white"}} onClick={() => setNameList(nameList.concat('김우빈'))} >
           김우빈 추가
-        </button>
+        </div>
 
-        <button onClick={() => setNameList(filtername)}>
+        <div onClick={() => setNameList(filtername)}>
           김우빈 삭제
-        </button>
+        </div>
 
-        <button onClick={() => setNameList(nameList.splice(1,1))}>
+        <div onClick={() => setNameList(nameList.splice(1,1))}>
           두번째 있는 놈 출력
-        </button>
+        </div>
 
-        <button onClick={() => setNameList(slicename)}>
+        <div onClick={() => setNameList(slicename)}>
           라면 삭제
-        </button>
-
+        </div>
+        </div>
 
 
       </div>

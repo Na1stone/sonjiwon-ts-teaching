@@ -1,0 +1,12 @@
+.buttons div{
+    
+    width: fit-content;
+    height: fit-content;
+    padding: 6px 12px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    cursor: wait;
+    
+}
