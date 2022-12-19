@@ -1,11 +1,11 @@
 import React from "react"
 import './App.css';
-import Woobin from './Woobin';
+import Artist from './Artist';
 
 function App() {
   return (
     <div>
-      <Woobin/>
+      <Artist/>
     </div>
   );
 }
