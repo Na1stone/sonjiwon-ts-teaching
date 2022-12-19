@@ -4,9 +4,7 @@ import Artist from './component/Artist';
 
 function App() {
   return (
-    <div>
-      <Artist/>
-    </div>
+    <Artist/>
   );
 }
 

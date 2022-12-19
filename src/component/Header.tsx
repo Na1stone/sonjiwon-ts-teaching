@@ -10,6 +10,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-shrink: 0;
 `;
 const HeaderSection = styled.div<{ isFirst: boolean, isLast: boolean }>`
   margin-left: ${props => props.isFirst && '12px'};

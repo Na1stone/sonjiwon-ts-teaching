@@ -4,27 +4,14 @@ import Cezanne from "./artist/Cezanne";
 import Picasso from "./artist/Picasso";
 import Rembrandt from "./artist/Rembrandt";
 import Header from "./Header";
-import styled from "styled-components"
 import Footer from "./Footer";
-
-const Container = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-`;
-
-const Body = styled.div`
-  width: 100%;
-  height: 100%;
-`;
-
+import * as S from "./Artist.style"
 
 const Artist = () => {
   return (
-    <Container>
+    <S.Container>
       <Header/>
-      <Body>
+      <S.Body>
         <Routes>
           <Route path="피카소" element={
             <Picasso/>
@@ -38,9 +25,9 @@ const Artist = () => {
             <Rembrandt/>
           }/>
         </Routes>
-      </Body>
+      </S.Body>
       <Footer/>
-    </Container>
+    </S.Container>
 
   )
 }
