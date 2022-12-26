@@ -1,10 +1,12 @@
-import React from "react"
-import './App.css';
-import Artist from './component/Artist';
+import React from 'react'
+import "./App.css";
+import Art from './Repeat/Art';
+
+
 
 function App() {
   return (
-    <Artist/>
+    <Art/>
   );
 }
 
