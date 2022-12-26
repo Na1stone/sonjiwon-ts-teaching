@@ -2,7 +2,7 @@ import React from 'react';
 import {useNavigate} from "react-router-dom";
 import styled from "styled-components";
 
-const Container = styled.div`
+const HeaderContainer = styled.div`
   width: 100%;
   height: 60px;
   display: flex;
@@ -27,7 +27,7 @@ enum ArtList {
 const Header = () => {
   const navigate = useNavigate();
   return (
-    <Container>
+    <HeaderContainer>
       {Object.values(ArtList).map((artist: String, index: number) => {
         return (
           <HeaderSection isFirst={index === 0} isLast={Object.values(ArtList).length === index + 1} key={index}
@@ -37,7 +37,7 @@ const Header = () => {
         )
       })}
 
-    </Container>
+    </HeaderContainer>
   );
 
 };
