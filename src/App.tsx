@@ -3,8 +3,7 @@ import "./App.css";
 import Art from './Repeat/Art';
 
 
-
-function App() {
+const App = () => {
   return (
     <Art/>
   );
